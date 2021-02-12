@@ -34,6 +34,7 @@ All tasks are executed at different time duration as there are only five threads
 
 #########################Task Class##########################################
 
-Each task is considered as a thread, which are represented in the task Class. To this end, Task class implements callable interface
-(enabling the task being managed by threadpool) A priority is assigned to each task, based on which the tasks are 
-prioritized in a thread pool. The method call is the exection of task. the method is called by the invokeAll methods of executorservice. 
+Each task is considered as a thread, which are represented in the task Class. To this end, Task class implements
+callable interface (enabling the task being managed by threadpool) A priority is assigned to each task, based on
+which the tasks are prioritized in a thread pool. The method call is the exection of task. the method is called by
+the invokeAll methods of executorservice.
