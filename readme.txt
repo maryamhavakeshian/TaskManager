@@ -13,7 +13,7 @@ The code enables  real time performance, through considering each task as a thre
 the thread pool whose size is a predefined value. 
 
 
-#########################Main method############################################
+#########################Main Class############################################
 First, an instance PriorityBlockingQueue is created to contain the existing tasks with their priorities. 
 The implementation of PriorityBlockingQueue utilizes reentrant lock mechanism to provide mutual exclusion
 to prevent race condition, while prioritizing issues. It, also, prioritize tasks based on their priorities. 
@@ -32,8 +32,8 @@ exclusion techniques, such as semaphore( for using memory) or locking (accessing
 Finally, calling invokeAll() method, the executor service executes the given list of callable tasks.
 All tasks are executed at different time duration as there are only five threads in thread pool.
 
-#########################Main method############################################
+#########################Task Class##########################################
 
-Each task is considered as a thread, which are represented in the task Class. Task class implements callable interface 
+Each task is considered as a thread, which are represented in the task Class. To this end, Task class implements callable interface
 (enabling the task being managed by threadpool) A priority is assigned to each task, based on which the tasks are 
 prioritized in a thread pool. The method call is the exection of task. the method is called by the invokeAll methods of executorservice. 
